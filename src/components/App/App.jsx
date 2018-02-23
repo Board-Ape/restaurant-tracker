@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import apiKey from '../apikey.js';
+import apiKey from '../../apikey.js';
 const randomID = require('random-id');
 
 class App extends Component {
