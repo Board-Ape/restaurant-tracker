@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import apiKey from '../apikey.js';
+const randomID = require('random-id');
 
 class App extends Component {
 
   componentDidMount() {
-    fetch(`https://check-api.herokuapp.com/restaurant-tracker`, {
-      headers: {
-        Authorization: apiKey
-      }
-    })
-    .then(response => console.log(response))
-    .then(response => console.log(response));
+    const id =randomID();
+    console.log(id);
   }
 
   render() {
